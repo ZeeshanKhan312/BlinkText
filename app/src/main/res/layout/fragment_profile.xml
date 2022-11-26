@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Profile"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/getUserImage"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <!--    cardView is used to make changes in shape of a view (image,button...)-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/getUserImage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/getUserName"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="130dp">
+
+        <ImageView
+            android:id="@+id/getUserImageinImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile"
+            android:scaleType="centerCrop">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/getUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:inputType="textCapWords"
+        android:text="User Name"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:padding="8dp"
+        android:background="#ABFFFFFF">
+    </TextView>
+    <!-- widget button view will allow to change background colour-->
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/getUserName"
+        android:id="@+id/profileUpd"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="Update Your Profile"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:background="#29B1E0">
+
+    </android.widget.Button>
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/profileUpd"
+        android:id="@+id/logout"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:text="LOG OUT"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:background="#F3F80202">
+
+    </android.widget.Button>
+
+
+</RelativeLayout>
