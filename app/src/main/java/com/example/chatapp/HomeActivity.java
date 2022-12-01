@@ -3,6 +3,8 @@ package com.example.chatapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
+import android.view.Menu;
+
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
@@ -45,7 +47,12 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+    }
 
-
+    //to add search button in this page
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.top_menu,menu);
+        return super.onCreateOptionsMenu(menu);
     }
 }

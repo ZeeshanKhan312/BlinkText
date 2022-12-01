@@ -17,7 +17,7 @@ public class PageAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new ProfileFragment();
+                return new ChatFragment();
             case 1: {
 //                SportsFragment fragment = new SportsFragment();
 //                Bundle data = new Bundle();
