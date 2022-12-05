@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="#F5201F1F"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/getUserImage"
         android:layout_marginBottom="30dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textStyle="bold" />
 
     <!--    cardView is used to make changes in shape of a view (image,button...)-->
@@ -47,10 +47,9 @@
         android:textAlignment="center"
         android:inputType="textCapWords"
         android:text="User Name"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="25dp"
-        android:padding="8dp"
-        android:background="#ABFFFFFF">
+        android:padding="8dp">
     </TextView>
     <!-- widget button view will allow to change background colour-->
     <android.widget.Button

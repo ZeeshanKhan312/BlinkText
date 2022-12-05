@@ -31,11 +31,12 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_alignParentBottom="true"
-        app:tabTextColor="#618C8f"
-        app:tabSelectedTextColor="#03A9F4"
         app:tabIndicatorColor="#03A9F4"
         app:tabIndicatorHeight="5dp"
-        app:tabMode="fixed">
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#03A9F4"
+        app:tabTextColor="#618C8f"
+        android:background="#0B0A0A">
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/chats"
