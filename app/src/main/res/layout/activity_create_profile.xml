@@ -5,18 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
+    android:backgroundTintMode="src_over"
+    android:backgroundTint="#6F222020"
     tools:context=".CreateProfile">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create Your Profile"
-        android:textSize="25sp"
-        android:layout_centerHorizontal="true"
         android:layout_above="@+id/getUserImage"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        android:textColor="@color/black"
+        android:text="Create Your Profile"
+        android:textColor="@color/white"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
 <!--    cardView is used to make changes in shape of a view (image,button...)-->
@@ -47,12 +49,11 @@
         android:layout_centerInParent="true"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
+        android:background="#C1FFFFFF"
         android:hint="Enter Your Name Here"
-        android:textColorHint="#D8373636"
         android:inputType="textCapWords"
         android:textColor="@color/black"
-        android:background="#E8FFFFFF">
-    </EditText>
+        android:textColorHint="#D8373636"></EditText>
 
 <!-- widget button view will allow to change background colour-->
     <android.widget.Button
