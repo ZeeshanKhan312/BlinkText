@@ -7,6 +7,7 @@
         <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/drawable-v24/ic_camera.xml" value="0.2555" />
         <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2345" />
         <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/drawable-v24/ic_send.xml" value="0.2555" />
+        <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/drawable/ic_camera.xml" value="0.2385" />
         <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2345" />
         <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/drawable/receive_drawable.xml" value="0.2545" />
         <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/drawable/sent_drawable.xml" value="0.2535" />
@@ -19,9 +20,11 @@
         <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/layout/chats.xml" value="0.25" />
         <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/layout/fragment_chat.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/layout/fragment_status.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/layout/message_receive.xml" value="0.25" />
         <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/layout/message_recieve.xml" value="0.264" />
         <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/layout/message_sent.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/layout/status.xml" value="0.25" />
         <entry key="..\:/Users/Zeeshan/ChatApp/app/src/main/res/menu/top_menu.xml" value="0.24895833333333334" />
       </map>
     </option>

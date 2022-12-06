@@ -19,12 +19,7 @@ public class PageAdapter extends FragmentPagerAdapter {
             case 0:
                 return new ChatFragment();
             case 1: {
-//                SportsFragment fragment = new SportsFragment();
-//                Bundle data = new Bundle();
-//                data.putString("Category", "Sports");
-//                fragment.setArguments(data);
-//                return fragment;
-                return new ProfileFragment();
+                return new StatusFragment();
             }
             case 2:
                 return new ProfileFragment();
