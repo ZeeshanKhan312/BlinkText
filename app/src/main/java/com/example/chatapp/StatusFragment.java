@@ -108,6 +108,7 @@ public class StatusFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists()){
+                    userStatuses.clear();
                     for(DataSnapshot statusSnapshot:snapshot.getChildren()){ //will get the whole status of a sungle user
                         UserStatus status=new UserStatus();
                         status.setName(statusSnapshot.child("name").getValue(String.class));
@@ -116,7 +117,7 @@ public class StatusFragment extends Fragment {
 
                         //for adding single status of a user
                         ArrayList<Status> statuses=new ArrayList<>();
-                        for(DataSnapshot singleStatus:statusSnapshot.getChildren()){
+                        for(DataSnapshot singleStatus:statusSnapshot.child("statuses").getChildren()){
                             Status status1=singleStatus.getValue(Status.class);
                             statuses.add(status1);
                         }

@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.chatapp.Models.User;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -44,6 +45,7 @@ public class ChatFragment extends Fragment {
                 Users.clear();
                 for(DataSnapshot snapshot1: snapshot.getChildren()){
                     User user= snapshot1.getValue(User.class);
+                    if(!user.getUid().equals(FirebaseAuth.getInstance().getUid())) //to not add the Login user for chatting
                     Users.add(user);
                 }
                 userAdapter.notifyDataSetChanged();
